@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amscd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\pagestyle{empty}
+\usepackage{color}
+%\usepackage[all,dvips]{xy}
+
+
+\setlength{\textheight}{8.5in} \setlength{\topmargin}{0.0in}
+\setlength{\headheight}{0.0in} \setlength{\headsep}{0.0in}
+\setlength{\leftmargin}{0.5in}
+\setlength{\oddsidemargin}{0.0in}
+%\setlength{\parindent}{1pc}
+\setlength{\textwidth}{6.5in}
+%\linespread{1.6}
+
+\newtheorem{definition}{Definition}
+\newtheorem{problem}{Problem}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{prop}[theorem]{Proposition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\thispagestyle{empty}
+
+\bigskip
+\centerline{\textbf{\Large{Project Proposal}}}
+\centerline{CSci 5525: Machine Learning}
+
+\bigskip
+\bigskip
+
+\centerline{\textbf{\Large{How Much Did it Rain?}}}
+\centerline{\it{\Large{Predicting hourly rainfall using data from polarimetric radars}}}
+
+\bigskip
+\centerline{\Large{Abhijeet Kislay \thickspace Arjun Varshney \thickspace Kartik Singhal }}
+\centerline{\{kisla004, varsh007, singh559\} @umn.edu}
+
+
+\section*{Motivation}
+The amount of precipitation is highly variable across time and distance, thereby making the estimation of rainfall an imposing and challenging problem. For this we need a more dynamic and widespread system other than rain gauge which is although the most effective way but too impractical when it comes to portability and installation at different sites. Another source is data collected from radars, which is cheaper and more practical alternative. But currently, the algorithms predicting the estimates of the rainfall from the radar data are inaccurate and inefficient. In this study, we focus on comparing the two approaches of classification and regression on the radar data and evaluating which approach works better and is more efficient.
+
+\section*{Related Study}
+Earlier studies have proved that multi-class supervised learning using decision trees is the most efficient method for solving the given issue \cite{anzelmo}. Also, analyzing the past submissions, we also observed that K nearest neighbor performs well compared to logistic regression.\cite{lesnikowski}
+
+\section*{Project plan and evaluation}
+For this project, we will be working on Supervised learning based classification and regression. For classification, we plan to implement the future works of \cite{lesnikowski} in which we will first implement Linear Discriminant Analysis on the dataset. Post that, to compare it with regression methodology, we plan to implement the Support Vector Regression method. For evaluating the dataset on the proposed algorithms, we will use k-fold cross-validation and 80/20 train/test splitting methods.
+
+
+\begin{thebibliography}{99}
+% NOTE: change the "9" above to "99" if you have MORE THAN 10 references.
+
+\bibitem{anzelmo} Kaggle Team. How Much Did It Rain? Winner's Interview: 1st place, Devin Anzelmo. 1 July, 2015 {\textit{http://blog.kaggle.com/2015/07/01/how-much-did-it-rain-winners-interview-1st-place-devin-anzelmo/}}  
+
+\bibitem{lesnikowski} Adam Lesnikowski. \textit{How Much Did it Rain? Predicting Real Rainfall Totals Based on Radar Data } May 13, 2015
+
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} 
